@@ -13,7 +13,6 @@ var navigationDiv = document.createElement("div")
 navigationDiv.setAttribute("id", "navigation")
 
 for (let i = 0; i < navTitles.length; i++) {
-    console.log("doing the thing")
     let row = document.createElement("button")
     row.innerHTML = navTitles[i]
 

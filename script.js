@@ -17,7 +17,7 @@ const forward = document.getElementById("forward")
 function changeAccent(color) {
     document.documentElement.style.setProperty('--accent', color)
 }
-changeAccent("#2a2aa1") // Loads in nicely
+changeAccent("#cf190c") // Loads in nicely
 
 
 /******************** Fill the Slide ********************/

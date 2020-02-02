@@ -5,7 +5,8 @@ var slide1 = {
     description: "asdfg",
     image: "file.png",
     example1: "ex 1", 
-    example2: "ex 2"
+    example2: "ex 2",
+    color: "#cf190c"
 }
 
 var slides = {slide1}

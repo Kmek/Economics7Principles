@@ -25,8 +25,22 @@ changeAccent("#2ea9ab") // Loads in nicely
 var currentSlide = 0
 // var onMainSlide = true
 
-function loadSlide(slide, number) {
-    // Load info into the given slide
+// Load info into the given slide
+function loadSlide(slide, info) {
+    // Title
+    slide.children[0].innerHTML = info.title
+    // Description
+    slide.children[2].rows[0].cells[0].firstChild.innerHTML = info.description
+    // Image
+    slide.children[2].rows[0].cells[1].firstChild.setAttribute("src", info.image)
+    // Example 1
+    slide.children[2].rows[1].cells[0].firstChild.innerHTML = info.example1
+    // Example 2
+    slide.children[2].rows[1].cells[1].firstChild.innerHTML = info.example2
+    // Color
+    changeAccent(info.color)
+
+    // console.log(allSlides[current].children[2].rows[1].cells[0].firstChild.innerHTML)
 }
 
 /******************** Move the Slides ********************/

@@ -34,6 +34,8 @@ body {
 	background-image: url("./graph.png");
     width: 100%;
     min-width: calc(var(--canvasW) + 50px);
+    max-width: 100%;
+    /* height: 680px; */
     overflow-x: hidden;
     transition-duration: 2.0s;
 } 
@@ -46,7 +48,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 15px 25px;
-	text-align: left;
+    text-align: left;
 }
 
 .row {
@@ -184,9 +186,10 @@ button {
 }
 
 img {
-	width: 80%;
-	margin: 5px 0 0 10%; /*5px on top, 10% on left*/
-	border-radius: 5px;
+	max-width: 90%;
+	/* margin: 5px 0 0 10%; 5px on top, 10% on left */
+    /* border-radius: 5px; */
+    border: 2px solid var(--accent);
 }
 
 a {
@@ -253,14 +256,29 @@ input[type=number]::-webkit-outer-spin-button {
     height: 600px;
     border-radius: 10px;
 
+    overflow: hidden;
+
     position: absolute;
     top: 100px;
-    left: -700px;
+    /* left: -700px; */
+    transition-duration: 2.0s;
 }
 
+.hiddenSlide {
+    height: 0;
+    visibility: hidden;
+}
+
+/* .leftSide {
+    left: -600px;
+}
 .centerSlide {
     left: calc(50% - 325px);
 }
+.rightSide {
+    right: -700px;
+    border-color: green;
+} */
 
 .slide h2 {
     margin-left: 10px;
@@ -268,9 +286,18 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 10px;
 }
 
-.slide hr, .slide h2 {
+.transition, .slide, .slide hr, .slide h2, .slide img {
     transition-duration: 2.0s;
 }
+
+.noTransition {
+    transition-duration: 0s;
+    transition: none !important;
+}
+
+/* .slide h2, .slide hr {
+    visibility: inherit;
+} */
 
 /********** Arrow Buttons **********/
 #back {

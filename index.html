@@ -9,64 +9,82 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>7 Economic Principles</h1>
-    </div>
+    <div style="width:100%; height:100%; position: relative; overflow-x: hidden;">
 
-    <div class="slide" id="slide2">
-        <h2 id="slideTitle">Title</h2>
-        <hr>
-        <table>
-            <tr>
-                <td><p id="description">Short Description</p></td>
-                <td><!-- <img> --></td>
-            </tr>
-            <tr>
-                <td><p id="example1">First Example</p></td>
-                <td><p id="example2">Second Example</p></td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="slide centerSlide" id="mainSlide">
-        <h2 id="slideTitle">Title</h2>
-        <hr>
-        <table>
-            <tr>
-                <td><p id="description">Short Description</p></td>
-                <td><!-- <img> --></td>
-            </tr>
-            <tr>
-                <td><p id="example1">First Example</p></td>
-                <td><p id="example2">Second Example</p></td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="pageBackground">
-        <div id="page">
-
-            <!-- Space for absolute slides -->
-            <div style="width: 100%; height: 600px;"></div>
-
-            <div style="width: 100%; height: 40px; padding-top: 10px;">
-                <!-- <button id="back"><-</button> -->
-                <!-- <button id="forward">-></button> -->
-                <div id="back"></div>
-                <div id="forward"></div>
-            </div>
-            
+        <div id="header">
+            <h1>7 Economic Principles</h1>
         </div>
-    </div>
 
-    <div id="footer">
-		<span id="footerText">Website made by Kate Keefe</span>
-		<a href="https://github.com/Kmek/Economic7Principles" target="_blank"><button id="githubBtn">View on GitHub</button></a>
+        <div id="pageBackground">
+            <div id="page">
+
+                <div class="slide shadow" id="slide2">
+                    <h2 id="slideTitle">Title Slide2</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><p id="description">Short Description slide2</p></td>
+                            <td><img src="test.png" class="shadow"></td>
+                        </tr>
+                        <tr>
+                            <td><p id="example1">First Example</p></td>
+                            <td><p id="example2">Second Example</p></td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <div class="slide shadow" id="mainSlide">
+                    <h2 id="slideTitle">Title Main Slide</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><p id="description">Short Description mainSlide</p></td>
+                            <td><img src="test.png" class="shadow"></td>
+                        </tr>
+                        <tr>
+                            <td><p id="example1">First Example</p></td>
+                            <td><p id="example2">Second Example</p></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="slide shadow" id="slide3">
+                    <h2 id="slideTitle">Title Slide3</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><p id="description">Short Description slide3</p></td>
+                            <td><img src="test.png" class="shadow"></td>
+                        </tr>
+                        <tr>
+                            <td><p id="example1">First Example</p></td>
+                            <td><p id="example2">Second Example</p></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Space for absolute slides -->
+                <div style="width: 100%; height: 600px;"></div>
+
+                <div style="width: 100%; height: 40px; padding-top: 10px;">
+                    <!-- <button id="back"><-</button> -->
+                    <!-- <button id="forward">-></button> -->
+                    <div id="back"></div>
+                    <div id="forward"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <span id="footerText">Website made by Kate Keefe</span>
+            <a href="https://github.com/Kmek/Economic7Principles" target="_blank"><button id="githubBtn">View on GitHub</button></a>
+        </div>
+        
+        <div id="navBtn"></div>
+        <link rel="stylesheet" type="text/css" href="navigation.css">
+        <script src="navigation.js"></script>
     </div>
-    
-    <div id="navBtn"></div>
-    <link rel="stylesheet" type="text/css" href="navigation.css">
-	<script src="navigation.js"></script>
     
     <script src="./slides.js"></script>
     <script src="./script.js"></script>

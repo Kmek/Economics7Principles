@@ -3,7 +3,7 @@
 
 const navBtn = document.getElementById("navBtn")
 
-const navTitles = ["Scarcity Forces Tradeoffs", "Cost vs. Benefits", "People Think at the Margin", "Incentives Matter", "Trade Makes People Better", "Markets Coordinate Trade", "Future Consequences Count"]
+const navTitles = ["Scarcity Forces Tradeoffs", "Costs vs. Benefits", "People Think at the Margin", "Incentives Matter", "Trade Makes People Better", "Markets Coordinate Trade", "Future Consequences Count"]
 
 let navDots = document.createElement("h2")
 navDots.innerHTML = "..."
@@ -16,7 +16,7 @@ for (let i = 0; i < navTitles.length; i++) {
     let row = document.createElement("button")
     row.innerHTML = navTitles[i]
 
-    // row.setAttribute("onclick", ("callSlides(i)"))
+    row.setAttribute("onclick", ("callSlide(" + i + ")"))
 
     navigationDiv.appendChild(row)
 }

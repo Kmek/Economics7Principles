@@ -44,5 +44,5 @@
 }
 #navigation button:hover {
     width: 100%;
-	background-color: var(--accent);
+	color: var(--accent);
 }

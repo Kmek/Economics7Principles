@@ -31,7 +31,7 @@ body {
 /********** Page **********/
 #pageBackground {
     background-color: var(--accent);
-	background-image: url("./graph.png");
+	background-image: url("./media/graph.png");
     width: 100%;
     min-width: calc(var(--canvasW) + 50px);
     max-width: 100%;
@@ -281,7 +281,7 @@ input[type=number]::-webkit-outer-spin-button {
 } */
 
 .slide h2 {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 0;
     padding-top: 10px;
 }
@@ -310,7 +310,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 0;
     border-style: solid;
     border-width: 20px 200px 20px 0;
-    border-color: transparent var(--footer) transparent transparent;
+    border-color: transparent #eee transparent transparent;
 }
 #back:hover {
     border-color: transparent black transparent transparent;
@@ -326,7 +326,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 0;
     border-style: solid;
     border-width: 20px 0 20px 200px;
-    border-color: transparent transparent transparent var(--footer);
+    border-color: transparent transparent transparent #eee;
 }
 #forward:hover {
     border-color: transparent transparent transparent black;

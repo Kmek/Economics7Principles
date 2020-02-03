@@ -35,7 +35,7 @@ function loadSlide(slide, info) {
 }
 
 /******************** Move the Slides ********************/
-var position = ["-700px", "calc(50% - 325px)", "100%"]
+var position = ["-700px", "calc(50% - 325px)", "105%"]
 var allSlides = [secondSlide, mainSlide, thirdSlide]
 var current = 1;
 
@@ -43,6 +43,7 @@ for (let s = 0; s < allSlides.length; s++) {
     allSlides[s].style.left = position[s]
 }
 
+// Transitions work/tested on chrome, rip other browsers but chrome's different
 function changeSlide(direction) {
     if (direction == -1) {
         for (let s = 0; s < allSlides.length; s++) {

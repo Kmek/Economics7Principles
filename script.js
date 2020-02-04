@@ -32,6 +32,9 @@ function loadSlide(slide, info) {
     slide.children[2].rows[1].cells[1].firstChild.innerHTML = info.example2
     // Color
     changeAccent(info.color)
+
+    // Change current slide number
+    document.getElementById("slidesCount").innerHTML = slideIndex + 1
 }
 
 /******************** Move the Slides ********************/

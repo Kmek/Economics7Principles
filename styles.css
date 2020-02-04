@@ -140,8 +140,10 @@ h1, h2, h3, h4 {
 p {
 	font-size: 16px;
 	line-height: 24px;
-	text-indent: 25px;
-	margin: 5px 0;
+}
+.slide p {
+    text-indent: 25px;
+    margin: 5px 0;
 }
 
 mark {
@@ -264,21 +266,13 @@ input[type=number]::-webkit-outer-spin-button {
     transition-duration: 2.0s;
 }
 
+.transition, .slide, .slide hr, .slide h2, .slide img {
+    transition-duration: 2.0s;
+}
 .hiddenSlide {
     height: 0;
     visibility: hidden;
 }
-
-/* .leftSide {
-    left: -600px;
-}
-.centerSlide {
-    left: calc(50% - 325px);
-}
-.rightSide {
-    right: -700px;
-    border-color: green;
-} */
 
 .slide h2 {
     margin-left: 15px;
@@ -286,18 +280,18 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 10px;
 }
 
-.transition, .slide, .slide hr, .slide h2, .slide img {
-    transition-duration: 2.0s;
+#slideCountDiv {
+    background-color: #eee;
+    height: 32px; 
+    width: 90px; 
+    padding-top: 8px;
+    margin-left: 80px;
+    float: left; 
+    text-align: center; 
+    border-radius: 5px;
+    
+    /* border: 1px solid black; */
 }
-
-.noTransition {
-    transition-duration: 0s;
-    transition: none !important;
-}
-
-/* .slide h2, .slide hr {
-    visibility: inherit;
-} */
 
 /********** Arrow Buttons **********/
 #back {
@@ -310,10 +304,10 @@ input[type=number]::-webkit-outer-spin-button {
     height: 0;
     border-style: solid;
     border-width: 20px 200px 20px 0;
-    border-color: transparent #eee transparent transparent;
+    border-color: transparent black transparent transparent;
 }
 #back:hover {
-    border-color: transparent black transparent transparent;
+    border-color: transparent #727272 transparent transparent;
 }
 
 #forward {
@@ -326,8 +320,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 0;
     border-style: solid;
     border-width: 20px 0 20px 200px;
-    border-color: transparent transparent transparent #eee;
-}
-#forward:hover {
     border-color: transparent transparent transparent black;
 }
+#forward:hover {
+    border-color: transparent transparent transparent #727272;
+}
+/* #383838 */

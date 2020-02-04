@@ -52,3 +52,5 @@ var slides = [{
     example2: "ex 2",
     color: "#21b08f"
 }]
+
+document.getElementById("slidesTotal").innerHTML = slides.length

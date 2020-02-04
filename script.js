@@ -116,8 +116,11 @@ forward.onclick = function() {
 /******************** Call Slides Through Nav Buttons ********************/
 function callSlide(index) {
     if (slideIndex != index) {
+        if (slideIndex > index)
+            changeSlide(-1)
+        else if (slideIndex < index)
+            changeSlide(1)
         slideIndex = index
-        changeSlide(1)
         loadSlide(allSlides[current], slides[slideIndex])
     }
 }

@@ -4,7 +4,7 @@ var slideIndex = 0
 
 var slides = [{
     title: "Scarcity Forces Tradeoffs",
-    description: "asdfg my desc",
+    description: "asdfg my desc, test <mark>mark</mark>",
     image: "media/graph.png",
     example1: "ex 1", 
     example2: "ex 2",

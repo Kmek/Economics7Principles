@@ -16,6 +16,10 @@ function changeAccent(color) {
 }
 
 /******************** Fill the Slide ********************/
+// Copy first slide for three
+secondSlide.innerHTML = mainSlide.innerHTML
+thirdSlide.innerHTML = mainSlide.innerHTML
+
 var currentSlide = 0
 
 // Load info into the given slide
@@ -23,13 +27,13 @@ function loadSlide(slide, info) {
     // Title
     slide.children[0].innerHTML = info.title
     // Description
-    slide.children[2].rows[0].cells[0].firstChild.innerHTML = info.description
+    slide.children[2].rows[0].cells[0].children[1].innerHTML = info.description
     // Image
     slide.children[2].rows[0].cells[1].firstChild.setAttribute("src", info.image)
     // Example 1
-    slide.children[2].rows[1].cells[0].firstChild.innerHTML = info.example1
+    slide.children[2].rows[1].cells[0].children[1].innerHTML = info.example1
     // Example 2
-    slide.children[2].rows[1].cells[1].firstChild.innerHTML = info.example2
+    slide.children[2].rows[1].cells[1].children[1].innerHTML = info.example2
     // Color
     changeAccent(info.color)
 

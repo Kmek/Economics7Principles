@@ -125,11 +125,6 @@ td {
     font-size: 16px;
     /* border: 1px solid black; */
 }
-td mark {
-	font-size: 15px;
-	padding: 0 4px;
-}
-
 
 /********** Base Components **********/
 h1, h2, h3, h4 {
@@ -147,11 +142,9 @@ p {
 }
 
 mark {
-	background-color: #cccccc;
-	padding: 2px 5px;
-	font-family: "Courier New", Courier, monospace;
-	border: 1px solid #ffffff;
-	border-radius: 2px;
+    background: none;
+    font-weight: bold;
+    color: var(--accent);
 }
 
 /* ul {
@@ -266,7 +259,7 @@ input[type=number]::-webkit-outer-spin-button {
     transition-duration: 2.0s;
 }
 
-.transition, .slide, .slide hr, .slide h2, .slide img {
+.transition, .slide, .slide hr, .slide h2, .slide h3, .slide img, .slide mark {
     transition-duration: 2.0s;
 }
 .hiddenSlide {

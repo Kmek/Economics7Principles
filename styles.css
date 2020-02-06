@@ -99,11 +99,6 @@ body {
 
 table {
     width: 100%;
-    height: 89%;
-	/* border-collapse: collapse; */
-	margin-top: 10px;
-	margin-bottom: 10px;
-	table-layout: fixed;
 }
 
 th, td {
@@ -135,10 +130,6 @@ h1, h2, h3, h4 {
 p {
 	font-size: 16px;
 	line-height: 24px;
-}
-.slide p {
-    text-indent: 25px;
-    margin: 5px 0;
 }
 
 mark {
@@ -181,9 +172,7 @@ button {
 }
 
 img {
-	max-width: 90%;
-	/* margin: 5px 0 0 10%; 5px on top, 10% on left */
-    /* border-radius: 5px; */
+	border-radius: 5px;
     border: 2px solid var(--accent);
 }
 
@@ -247,15 +236,12 @@ input[type=number]::-webkit-outer-spin-button {
 /********** Slide Styles **********/
 .slide {
     background-color: #eeeeee;
-    width: 650px;
+    width: 750px;
     height: 600px;
     border-radius: 10px;
-
     overflow: hidden;
-
     position: absolute;
     top: 100px;
-    /* left: -700px; */
     transition-duration: 2.0s;
 }
 
@@ -272,6 +258,24 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 0;
     padding-top: 10px;
 }
+.slide p {
+	text-indent: 25px;
+	text-align: left;
+	margin-left: 5px;
+}
+
+.slide img {
+	float: right;
+	max-width: 35%;
+	max-height: 200px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+/* .slide td {
+	border: 1px solid black;
+} */
 
 #slideCountDiv {
     background-color: #eee;

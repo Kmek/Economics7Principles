@@ -27,22 +27,25 @@ function loadSlide(slide, info) {
     // Title
     slide.children[0].innerHTML = info.title
     // Description
-    slide.children[2].rows[0].cells[0].children[1].innerHTML = info.description
+    slide.children[2].rows[0].cells[0].children[2].innerHTML = info.description
     // Image
-    slide.children[2].rows[0].cells[1].firstChild.setAttribute("src", info.image)
+    slide.children[2].rows[0].cells[0].children[0].setAttribute("href", info.image)
+    slide.children[2].rows[0].cells[0].children[0].children[0].setAttribute("src", info.image)
     // Example 1
-    slide.children[2].rows[1].cells[0].children[1].innerHTML = info.example1
+    slide.children[3].rows[0].cells[0].children[1].innerHTML = info.example1
     // Example 2
-    slide.children[2].rows[1].cells[1].children[1].innerHTML = info.example2
+    slide.children[3].rows[0].cells[1].children[1].innerHTML = info.example2
     // Color
     changeAccent(info.color)
+
+    // console.log(slide.children)
 
     // Change current slide number
     document.getElementById("slidesCount").innerHTML = slideIndex + 1
 }
 
 /******************** Move the Slides ********************/
-var position = ["-700px", "calc(50% - 325px)", "105%"]
+var position = ["-800px", "calc(50% - 375px)", "105%"]
 var allSlides = [secondSlide, mainSlide, thirdSlide]
 var current = 1;
 

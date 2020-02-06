@@ -26,21 +26,21 @@ var slides = [{
 }, {
     title: "Incentives Matter",
     description: "<mark>Incentives</mark> are benefits and costs that go along with a choice. Positive incentives are like benefits, because they entice a person to choose that given option. Negative incentives are like costs, as they discourage a person from choosing a given option, like negative reinforcement.",
-    image: "https://i.redd.it/9nr2w3mhbfa11.png",
+    image: "media/Incentives matter.PNG",
     example1: "A swear jar helps discourage my family members from swearing in the house by taxing them twenty-five cents when they swear, therefore influencing people not to swear.", 
     example2: "The company is offering a bonus to whoever makes the most sales, so everyone is encouraged to sell more products.",
     color: "#9e6bbf"
 }, {
     title: "Trade Makes People Better Off",
     description: "<mark>Trade</mark> allows for people to focus on what they’re good at, as in their <mark>work specialization</mark>. This specialization allows for people to concentrate on what they are skilled for & what they enjoy to do. When people work at something they have a knack for, then they are more <mark>efficient</mark>. Nowadays direct trading isn’t very common, as people use money, a placeholder for a person’s efforts, to purchase goods or services from shops. This makes the <mark>price</mark>, the value of a good or service, an important consideration when choosing a choice, as it can have a negative or positive influence on the potential buyer. Ideally a trade occurs when both the buyer and the producer benefit from the exchange.",
-    image: "https://www.dea2020.com/files/cache/4e700e64ab66ed01cb45b915a5cff60d.jpg",
+    image: "media/Trade makes people better off.png",
     example1: "I am interested in computer science because I enjoy programming and I am skilled in this area, so I will be a more efficient programmer than I would be a waitress or accountant.", 
     example2: "The government doesn’t regulate where people work because it doesn’t know every person’s work specialization, so people have the opportunity to work at an occupation of their choosing.",
     color: "#a62b56"
 }, {
     title: "Markets Coordinate Trade",
     description: "A <mark>market</mark> is any place where an exchange of goods or services happen. A free market is a market that has little or no government regulations, so people can trade until their heart’s content (or they run out of goods/services). In this market, both the buyers and the sellers are weighing the costs and benefits of a transaction, as both want an outcome with a high benefit for themselves, and they have the freedom to choose if they exchange or not. This is why these kinds of free markets are sustained by supply and demand all on their own.",
-    image: "https://media.olivegarden.com/en_us/images/marketing/italian-family-restaurant-olive-garden-g6-rdv.jpg",
+    image: "media/Markets coordinate trade.png",
     example1: "I bought an enamel pin off of Etsy when the price was discounted slightly, as this benefitted both me and the seller.", 
     example2: "Governments can help markets by breaking up monopolies to increase competition for a common product.",
     color: "#363391"

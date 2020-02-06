@@ -127,3 +127,17 @@ function callSlide(index) {
         loadSlide(allSlides[current], slides[slideIndex])
     }
 }
+
+/******************** Use arrow keys ********************/
+document.onkeydown = function(event) {
+    switch (event.keyCode) {
+        case 65: // a
+        case 37: // left arrow
+            back.onclick()
+            break;
+        case 68: // d
+        case 39: // right arrow
+            forward.onclick()
+            break;
+    }
+}

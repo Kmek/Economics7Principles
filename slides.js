@@ -26,7 +26,7 @@ var slides = [{
 }, {
     title: "Incentives Matter",
     description: "<mark>Incentives</mark> are benefits and costs that go along with a choice. Positive incentives are like benefits, because they entice a person to choose that given option. Negative incentives are like costs, as they discourage a person from choosing a given option, like negative reinforcement.",
-    image: "media/Incentives matter.PNG",
+    image: "media/Incentives matter.png",
     example1: "A swear jar helps discourage my family members from swearing in the house by taxing them twenty-five cents when they swear, therefore influencing people not to swear.", 
     example2: "The company is offering a bonus to whoever makes the most sales, so everyone is encouraged to sell more products.",
     color: "#9e6bbf"
